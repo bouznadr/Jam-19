@@ -55,7 +55,7 @@ public class Ladder : MonoBehaviour
             if (canGoUp)
             {
                 player.transform.position = Vector3.Lerp(player.transform.position, new Vector3(this.transform.position.x, finalPos.y, player.transform.position.z), .0080f);
-                if (player.transform.position.y - finalPos.y < .1f && player.transform.position.y - finalPos.y > -.1f)
+                if (player.transform.position.y - finalPos.y < .15f && player.transform.position.y - finalPos.y > -.15f)
                 {
                     Debug.Log("Finished climbing");
                     Variables.Object(player).Set("canMove", true);
