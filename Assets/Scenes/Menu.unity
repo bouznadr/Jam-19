@@ -1231,7 +1231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -68.54}
+  m_AnchoredPosition: {x: 0, y: -41.65}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &316161148
@@ -1819,7 +1819,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 83}
+  m_AnchoredPosition: {x: 0, y: 96.68}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &527947517
@@ -1835,7 +1835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":15.0,"y":35.0},"zoom":1.0,"elements":[{"chainable":false,"member":{"name":"LoadScene","parameterTypes":["System.String"],"targetType":"UnityEngine.SceneManagement.SceneManager","targetTypeName":"UnityEngine.SceneManagement.SceneManager","$version":"A"},"defaultValues":{"%sceneName":{"$content":"tuto","$type":"System.String"}},"position":{"x":-75.0,"y":-49.0},"guid":"b3223a66-6326-4dbf-8cc7-ea0343a2a073","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"10"},{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-276.0,"y":-49.0},"guid":"77403f62-fe61-474d-8989-dff3a3aa4b6a","$version":"A","$type":"Unity.VisualScripting.OnPointerClick","$id":"13"},{"sourceUnit":{"$ref":"13"},"sourceKey":"trigger","destinationUnit":{"$ref":"10"},"destinationKey":"enter","guid":"6536112a-b3f7-4400-900f-37daa586082a","$type":"Unity.VisualScripting.ControlConnection"}],"$version":"A"}}}'
+    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":57.0,"y":47.0},"zoom":1.0,"elements":[{"chainable":false,"member":{"name":"LoadScene","parameterTypes":["System.String"],"targetType":"UnityEngine.SceneManagement.SceneManager","targetTypeName":"UnityEngine.SceneManagement.SceneManager","$version":"A"},"defaultValues":{"%sceneName":{"$content":"tuto","$type":"System.String"}},"position":{"x":-75.0,"y":-49.0},"guid":"b3223a66-6326-4dbf-8cc7-ea0343a2a073","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"10"},{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-276.0,"y":-49.0},"guid":"77403f62-fe61-474d-8989-dff3a3aa4b6a","$version":"A","$type":"Unity.VisualScripting.OnPointerClick","$id":"13"},{"sourceUnit":{"$ref":"13"},"sourceKey":"trigger","destinationUnit":{"$ref":"10"},"destinationKey":"enter","guid":"6536112a-b3f7-4400-900f-37daa586082a","$type":"Unity.VisualScripting.ControlConnection"}],"$version":"A"}}}'
     _objectReferences: []
 --- !u!114 &527947518
 MonoBehaviour:
@@ -2425,6 +2425,8 @@ GameObject:
   - component: {fileID: 749128982}
   - component: {fileID: 749128981}
   - component: {fileID: 749128980}
+  - component: {fileID: 749128984}
+  - component: {fileID: 749128983}
   m_Layer: 5
   m_Name: select
   m_TagString: Untagged
@@ -2450,7 +2452,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 6.1}
+  m_AnchoredPosition: {x: 0, y: 29.4}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &749128980
@@ -2535,6 +2537,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 749128978}
   m_CullTransparentMesh: 1
+--- !u!114 &749128983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749128978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":164.0,"y":11.0},"zoom":1.0,"elements":[{"chainable":false,"member":{"name":"LoadScene","parameterTypes":["System.String"],"targetType":"UnityEngine.SceneManagement.SceneManager","targetTypeName":"UnityEngine.SceneManagement.SceneManager","$version":"A"},"defaultValues":{"%sceneName":{"$content":"select","$type":"System.String"}},"position":{"x":19.0,"y":-50.0},"guid":"6f8f03d7-5a83-4c61-978d-0ff52ee8012d","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"10"},{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-182.0,"y":-50.0},"guid":"046b1fc8-2ba1-47c1-b541-6453ce8c02a4","$version":"A","$type":"Unity.VisualScripting.OnPointerClick","$id":"13"},{"sourceUnit":{"$ref":"13"},"sourceKey":"trigger","destinationUnit":{"$ref":"10"},"destinationKey":"enter","guid":"45cd3c49-ec20-405a-88ac-122fc30d49ad","$type":"Unity.VisualScripting.ControlConnection"}],"$version":"A"}}}'
+    _objectReferences: []
+--- !u!114 &749128984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749128978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1001 &763934885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2733,15 +2765,15 @@ RectTransform:
   m_GameObject: {fileID: 847023923}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1033550822}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -22.22, y: 188.73}
+  m_AnchoredPosition: {x: -46.7, y: 218.6}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &847023925
@@ -2764,7 +2796,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: NOM DU JEUX
+  m_text: Sorcier et Boule de Crystal
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2798,7 +2830,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2827,7 +2859,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -51.129807, w: 0}
+  m_margin: {x: 0, y: 0, z: -64.28436, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
