@@ -72,4 +72,11 @@ public class Ladder : MonoBehaviour
         yield return new WaitForSeconds(.5f);
         canGoUp = true;
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(this.transform.position, .1f);
+        Gizmos.DrawWireSphere(new Vector3(transform.position.x, transform.position.y + ladderHeight - 1, transform.position.z), .1f);
+    }
 }
