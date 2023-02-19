@@ -75,8 +75,10 @@ public class Ladder : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+        Vector3 endPos = new Vector3(transform.position.x, transform.position.y + ladderHeight - 1, transform.position.z);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(this.transform.position, .1f);
-        Gizmos.DrawWireSphere(new Vector3(transform.position.x, transform.position.y + ladderHeight - 1, transform.position.z), .1f);
+        Gizmos.DrawWireSphere(endPos, .1f);
+        Gizmos.DrawLine(this.transform.position, endPos);
     }
 }
